@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "bd71798b-55a9-46f8-8f7b-017fdcc29f3a",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21312916",
+		"_collection_link": "https://red-equinox-498309.postman.co/workspace/New-Team-Workspace~3c272fc3-5ab5-46b7-992c-1fcaa819b989/collection/21312916-bd71798b-55a9-46f8-8f7b-017fdcc29f3a?action=share&source=collection_link&creator=21312916"
+	},
+	"item": [
+		{
+			"name": "createBook",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update Book",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update Book Copy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getBook",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
