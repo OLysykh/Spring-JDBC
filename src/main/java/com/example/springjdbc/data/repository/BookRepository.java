@@ -18,21 +18,12 @@ public class BookRepository {
 
     NamedParameterJdbcTemplate template;
 
-    //Old-fashioned way
-    JdbcTemplate jdbcTemplate;
-
     public Long createBook(Book book) {
         String sql = "INSERT INTO book (bookname, bookauthor) VALUES (:bookName, :bookAuthor) RETURNING ID";
         SqlParameterSource sqlParameterSource = new MapSqlParameterSource()
             .addValue("bookName", book.getBookName())
             .addValue("bookAuthor", book.getBookAuthor());
         return template.queryForObject(sql, sqlParameterSource, Long.class);
-    }
-
-    //PO JDBC
-    public Long createBookOldFashioned(Book book) {
-        String sql = "INSERT INTO book (bookname, bookauthor) VALUES (?, ?) RETURNING ID";
-        return jdbcTemplate.queryForObject(sql, Long.class, book.getBookName(), book.getBookAuthor());
     }
 
     public Book getBookById(Long id){
